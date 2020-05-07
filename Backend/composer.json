@@ -1,0 +1,12 @@
+{
+    "name": "juanr/backend",
+    "authors": [
+        {
+            "name": "Juan Rodas",
+            "email": "juan.rodas.manez@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^4.5"
+    }
+}
