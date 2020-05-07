@@ -7,8 +7,8 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $app = AppFactory::create();
 
-$app->get('/home', function (Request $request, Response $response, array $args) {
-    $response->getBody()->write("Hello World");
+$app->get('/', function (Request $request, Response $response, $args) {
+    $response->getBody()->write("Hello world!");
     return $response;
 });
 
