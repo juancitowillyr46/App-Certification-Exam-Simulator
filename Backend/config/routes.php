@@ -16,6 +16,10 @@ return function (App $app) {
             $group->put('/{id}', '\App\Controllers\UserController:Update');
             $group->delete('/{id}', '\App\Controllers\UserController:Delete');
         });
+        $group->group('/security', function (RouteCollectorProxy $group) {
+            $group->post('/signin', '\App\Services\RestApi\Controllers\SecurityController:SignIn');
+            $group->post('/signup', '\App\Services\RestApi\Controllers\SecurityController:SignUp');
+        });
     });
     // ->add(JwtMiddleware::class);
 

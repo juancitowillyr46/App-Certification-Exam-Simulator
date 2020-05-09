@@ -1,16 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace App\Controllers;
+namespace App\Service\RestApi\Controllers;
 
 use Slim\Http\Response;
 use Slim\Http\ServerRequest;
 
 final class UserController
 {
-    // public function __invoke(ServerRequest $request, Response $response): Response
-    // {
-    //     return $response->withJson(['sucess' => true]);
-    // }
 
     public function ReadAll(ServerRequest $request, Response $response): Response {
         return $response->withJson(['sucess' => 'Get All Users']);
