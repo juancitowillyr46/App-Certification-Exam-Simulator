@@ -12,7 +12,7 @@
         "slim/http": "^1.0",
         "vlucas/phpdotenv": "^4.1",
         "selective/config": "^0.2.0",
-        "firebase/php-jwt": "^5.2",
+        "firebase/php-jwt": "^6.0",
         "cakephp/chronos": "^2.0",
         "php-di/php-di": "^6.1"
     },
